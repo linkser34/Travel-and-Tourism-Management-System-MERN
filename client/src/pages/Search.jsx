@@ -137,9 +137,9 @@ const Search = () => {
               id="sort_order"
               className="p-3 border rounded-lg"
             >
-              <option value="packagePrice_desc">Price high to low</option>
-              <option value="packagePrice_asc">Price low to high</option>
               <option value="packageRating_desc">Top Rated</option>
+              <option value="packagePrice_desc">Price high to low</option>
+              <option value="packagePrice_asc">Price low to high</option>              
               <option value="packageTotalRatings_desc">Most Rated</option>
               <option value="createdAt_desc">Latest</option>
               <option value="createdAt_asc">Oldest</option>

@@ -22,8 +22,8 @@ const Header = () => {
             style={{
               WebkitTextStroke: "0",
             }}
-          >
-            Dream Tours
+          > 
+            <Link to={`/`}> Dream Tours</Link>
           </span>
         </h1>
         <ul className="flex flex-wrap items-center justify-end gap-2 text-white font-semibold list-none">
@@ -50,7 +50,13 @@ const Header = () => {
                 />
               </Link>
             ) : (
-              <Link to={`/login`}>Login</Link>
+              <Link to={`/login`}>
+                <img
+                  src={defaultProfileImg}
+                  alt="Login"
+                  className="border w-10 h-10 border-black rounded-[50%]"
+                />
+              </Link>
             )}
           </li>
         </ul>
