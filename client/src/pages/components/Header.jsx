@@ -54,7 +54,7 @@ const Header = () => {
               <Link 
                 to={`/login`}
               >
-                <CiLogin />
+                <CiLogin className="w-8 h-8"/>
               </Link>
             )}
           </li>
