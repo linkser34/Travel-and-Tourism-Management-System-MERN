@@ -10,5 +10,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwind-text-fill")],
+  //plugins: [require("tailwind-text-fill")],
 };

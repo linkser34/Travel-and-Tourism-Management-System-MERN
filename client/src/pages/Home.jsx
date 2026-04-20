@@ -72,9 +72,9 @@ const Home = () => {
   }, [offerPackages]);
 
   useEffect(() => {
-    getTopPackages();
-    getLatestPackages();
-    getOfferPackages();
+    // getTopPackages();
+    // getLatestPackages();
+    // getOfferPackages();
   }, []);
 
   return (
@@ -120,7 +120,7 @@ const Home = () => {
             </button>
             <button
               onClick={() => {
-                navigate("/search?sort=packageRating");
+                navigate("/search?sort=packageRating_desc");
               }}
               className="flex items-center justify-around gap-x-1 bg-slate-400 text-white p-2 py-1 text-[8px] xxsm:text-sm sm:text-lg border-x border-white flex-1 hover:scale-105 transition-all duration-150"
             >
@@ -129,7 +129,7 @@ const Home = () => {
             </button>
             <button
               onClick={() => {
-                navigate("/search?sort=createdAt");
+                navigate("/search?sort=createdAt_desc");
               }}
               className="flex items-center justify-around gap-x-1 bg-slate-400 text-white p-2 py-1 text-[8px] xxsm:text-sm sm:text-lg border-x border-white flex-1 hover:scale-105 transition-all duration-150"
             >
@@ -138,7 +138,7 @@ const Home = () => {
             </button>
             <button
               onClick={() => {
-                navigate("/search?sort=packageTotalRatings");
+                navigate("/search?sort=packageTotalRatings_desc");
               }}
               className="flex items-center justify-around gap-x-1 bg-slate-400 text-white p-2 py-1 text-[8px] xxsm:text-sm sm:text-lg border-s border-white rounded-e-full flex-1 hover:scale-105 transition-all duration-150"
             >
