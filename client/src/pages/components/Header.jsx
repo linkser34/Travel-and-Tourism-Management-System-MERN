@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { CiLogin } from "react-icons/ci";
 import defaultProfileImg from "../../assets/images/profile.png";
 
 const Header = () => {
@@ -50,7 +51,11 @@ const Header = () => {
                 />
               </Link>
             ) : (
-              <Link to={`/login`}>Login</Link>
+              <Link 
+                to={`/login`}
+              >
+                <CiLogin />
+              </Link>
             )}
           </li>
         </ul>
