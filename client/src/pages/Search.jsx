@@ -133,7 +133,7 @@ const Search = () => {
             <label className="font-semibold">Sort:</label>
             <select
               onChange={handleChange}
-              defaultValue={"created_at_desc"}
+              value={`${sideBarSearchData.sort}_${sideBarSearchData.order}`}
               id="sort_order"
               className="p-3 border rounded-lg"
             >
