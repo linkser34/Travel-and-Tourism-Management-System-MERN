@@ -1,3 +1,4 @@
+import "dotenv/config";
 import express from "express";
 import mongoose from "mongoose";
 import authRoute from "./routes/auth.route.js";
@@ -6,11 +7,9 @@ import packageRoute from "./routes/package.route.js";
 import ratingRoute from "./routes/rating.route.js";
 import bookingRoute from "./routes/booking.route.js";
 import cookieParser from "cookie-parser";
-import dotenv from "dotenv";
 import path from "path";
 import cors from "cors";
 const app = express();
-dotenv.config();
 
 const __dirname = path.resolve();
 

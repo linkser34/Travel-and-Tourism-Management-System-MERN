@@ -10,5 +10,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwind-textform-fill")],
+  plugins: [],
 };

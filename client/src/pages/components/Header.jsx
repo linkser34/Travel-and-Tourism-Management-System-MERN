@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
+import { FaUser } from "react-icons/fa";
 import defaultProfileImg from "../../assets/images/profile.png";
 
 const Header = () => {
@@ -8,24 +9,26 @@ const Header = () => {
   return (
     <>
       <div className="bg-slate-400 p-4 flex justify-between items-center">
-        <h1
-          className="h-min text-4xl font-bold relative"
-          style={{
-            color: "transparent",
-            WebkitTextStroke: "0.7px",
-            WebkitTextStrokeColor: "#fff",
-          }}
-        >
-          Come
-          <span
-            className="shadow-xl rounded-lg text-slate-700 text-2xl absolute left-1 top-[-10px] text-center"
+        <Link to="/" className="hover:opacity-90 transition-opacity">
+          <h1
+            className="h-min text-4xl font-bold relative"
             style={{
-              WebkitTextStroke: "0",
+              color: "transparent",
+              WebkitTextStroke: "0.7px",
+              WebkitTextStrokeColor: "#fff",
             }}
           >
-            Dream Tours
-          </span>
-        </h1>
+            Come
+            <span
+              className="shadow-xl rounded-lg text-slate-700 text-2xl absolute left-1 top-[-10px] text-center"
+              style={{
+                WebkitTextStroke: "0",
+              }}
+            >
+              Dream Tours
+            </span>
+          </h1>
+        </Link>
         <ul className="flex flex-wrap items-center justify-end gap-2 text-white font-semibold list-none">
           <li className="hover:underline hover:scale-105 transition-all duration-150">
             <Link to={`/`}>Home</Link>
@@ -50,7 +53,9 @@ const Header = () => {
                 />
               </Link>
             ) : (
-              <Link to={`/login`}>Login</Link>
+              <Link to="/login" title="Login" aria-label="Login">
+                <FaUser className="text-2xl" />
+              </Link>
             )}
           </li>
         </ul>
