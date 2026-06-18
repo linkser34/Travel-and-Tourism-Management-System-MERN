@@ -29,7 +29,7 @@ const Search = () => {
         sort: sortFromUrl || "created_at",
         order: orderFromUrl || "desc",
       });
-    }
+    } [location.search];
 
     const fetchAllPackages = async () => {
       setLoading(true);
@@ -133,7 +133,7 @@ const Search = () => {
             <label className="font-semibold">Sort:</label>
             <select
               onChange={handleChange}
-              defaultValue={"created_at_desc"}
+              Value={'${SideBarSearchData.sort}_${SideBarSearchData.order}'}
               id="sort_order"
               className="p-3 border rounded-lg"
             >

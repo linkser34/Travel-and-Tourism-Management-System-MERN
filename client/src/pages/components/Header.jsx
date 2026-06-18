@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { FaUser } from "react-icons/Fa";
 import defaultProfileImg from "../../assets/images/profile.png";
 
 const Header = () => {
@@ -50,7 +50,9 @@ const Header = () => {
                 />
               </Link>
             ) : (
-              <Link to={`/login`}>Login</Link>
+              <Link to={`/login`}>
+                <FaUser className="text-2xl hover:scale-110 transition-all" />
+              </Link>
             )}
           </li>
         </ul>
